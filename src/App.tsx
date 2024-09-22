@@ -1,7 +1,13 @@
-import Clock from './pages/Clock';
-import { useClock } from './hooks';
+import Callback from './pages/Callback';
+import HighOrderCallback from './pages/HighOrderCallback';
+import UseOrCreateTest from './pages/UseOrCreateTest';
 
 export default function App() {
-  const today = useClock();
-  return <Clock today={today} />;
+  return (
+    <main>
+      <UseOrCreateTest />
+      <Callback />
+      <HighOrderCallback />
+    </main>
+  );
 }
