@@ -1,13 +1,7 @@
-import ButtonTest from './pages/ButtonTest';
-import InputTest from './pages/InputTest';
-import ModalTest from './pages/ModalTest';
+import Clock from './pages/Clock';
+import { useClock } from './hooks';
 
 export default function App() {
-  return (
-    <main>
-      <ButtonTest />
-      <InputTest />
-      <ModalTest />
-    </main>
-  );
+  const today = useClock();
+  return <Clock today={today} />;
 }
