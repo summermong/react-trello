@@ -1,21 +1,13 @@
-import ArrayState from './pages/ArrayState';
-import BasicForm from './pages/BasicForm';
-import HigherOrderRadioInputTest from './pages/HigherOrderRadioInputTest';
-import InputTest from './pages/InputTest';
-import NumberState from './pages/NumberState';
-// import RadioInputTest from './pages/RadioInputTest';
-import ShowHideModal from './pages/ShowHideModal';
+import ClassLifecycle from './pages/ClassLifecycle';
+import FetchTest from './pages/FetchTest';
+import WindowResizeTest from './pages/WindowResizeTest';
 
 export default function App() {
   return (
     <main>
-      <NumberState />
-      <InputTest />
-      <ShowHideModal />
-      {/* <RadioInputTest /> */}
-      <HigherOrderRadioInputTest />
-      <BasicForm />
-      <ArrayState />
+      <ClassLifecycle />
+      <WindowResizeTest />
+      <FetchTest />
     </main>
   );
 }
