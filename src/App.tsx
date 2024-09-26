@@ -1,13 +1,11 @@
-import ClassLifecycle from './pages/ClassLifecycle';
-import FetchTest from './pages/FetchTest';
-import WindowResizeTest from './pages/WindowResizeTest';
+import ClickTest from './pages/ClickTest';
+import FileDrop from './pages/FileDrop';
 
 export default function App() {
   return (
     <main>
-      <ClassLifecycle />
-      <WindowResizeTest />
-      <FetchTest />
+      <ClickTest />
+      <FileDrop />
     </main>
   );
 }
