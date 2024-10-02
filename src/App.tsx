@@ -1,17 +1,12 @@
-import ClickTest from './pages/ClickTest';
-import FileDrop from './pages/FileDrop';
-import ForwardRefTest from './pages/ForwardRefTest';
-import InputFocusTest from './pages/InputFocusTest';
-import InputValueTest from './pages/InputValueTest';
+import { ResponsiveProvider } from './contexts';
+import ResponsiveContextTest from './pages/ResponsiveContextTest';
 
 export default function App() {
   return (
-    <main>
-      <ClickTest />
-      <FileDrop />
-      <InputFocusTest />
-      <InputValueTest />
-      <ForwardRefTest />
-    </main>
+    <ResponsiveProvider>
+      <main>
+        <ResponsiveContextTest />
+      </main>
+    </ResponsiveProvider>
   );
 }
